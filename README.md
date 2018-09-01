@@ -1,2 +1,0 @@
-# myer
-practice VueJS
