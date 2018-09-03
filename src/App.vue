@@ -1,41 +1,81 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <section class="brand">
-      <img src="https://cdn.glitch.com/4fe2938a-963f-4754-a48c-0af2e2df417d%2Flogo.png?1535432056985" />
-      <p>
-        Lorem Ipsum is simply dummy text<br>of the printing and typesetting industry.
-      </p>
-    </section>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <Header></Header>
+    <Introduction></Introduction>
+    <Secondary></Secondary>
+    <Third></Third>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header.vue";
+import Introduction from "./components/Introduction.vue";
+import Secondary from "./components/Secondary.vue";
+import Third from "./components/Third.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Header,
+    Introduction,
+    Secondary,
+    Third,
+    Footer
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.brand{
-  background:#F7F7F7;
-  text-align:center;
-  padding:430px 0 0;
+/* common style */
+.d-flex {
+  display: flex;
 }
 
-.brand p{
-  font-size:25px;
-  margin-bottom:60px;
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 </style>
