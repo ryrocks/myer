@@ -1,5 +1,11 @@
 # myer
 
+## Todo List 
+
+1. RWD
+2. Carousel
+
+
 ## Project setup
 ```
 npm install
